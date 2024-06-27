@@ -5,12 +5,13 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { MatchResults } from "@stencil-community/router";
+import {  as BBox } from "geojson";
+export {  as BBox } from "geojson";
 export namespace Components {
     interface AppHome {
     }
     interface AppProfile {
-        "match": MatchResults;
+        "bbox": BBox;
     }
     interface AppRoot {
     }
@@ -44,7 +45,7 @@ declare namespace LocalJSX {
     interface AppHome {
     }
     interface AppProfile {
-        "match"?: MatchResults;
+        "bbox"?: BBox;
     }
     interface AppRoot {
     }
